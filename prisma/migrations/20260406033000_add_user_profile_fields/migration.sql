@@ -1,0 +1,9 @@
+-- AlterTable
+ALTER TABLE "User"
+ADD COLUMN "age" INTEGER,
+ADD COLUMN "gender" TEXT,
+ADD COLUMN "weight" DOUBLE PRECISION,
+ADD COLUMN "height" DOUBLE PRECISION,
+ADD COLUMN "trainingLevel" TEXT,
+ADD COLUMN "trainingGoal" TEXT,
+ADD COLUMN "injuryNotes" TEXT;
