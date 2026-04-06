@@ -1,6 +1,6 @@
 # ResetFlo
 
-ResetFlo helps active people track daily training and recovery signals in one place, then generate AI-assisted guidance from their recent trends.
+ResetFlo is a recovery journal that helps active people track workouts, sleep, soreness, and energy in one place. It provides personalized recovery insights, secure authentication, and generates AI-assisted guidance from their recent trends.
 
 ## Demo
 
