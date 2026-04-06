@@ -53,11 +53,12 @@ By keeping entries, profile context, and insights in one workflow, the app reduc
 ```mermaid
 graph TD
   Browser --> NextApp[Next.js App Router]
-  NextApp --> Auth[NextAuth API Routes]
-  NextApp --> API[Entries/Insights API Routes]
-  API --> Prisma[Prisma Client]
+  NextApp --> Auth[NextAuth Route Handlers]
+  NextApp --> RouteHandlers[App API Route Handlers]
+  NextApp --> Prisma[Prisma Client]
+  RouteHandlers --> Prisma
   Prisma --> Supabase[(Supabase PostgreSQL)]
-  API --> Gemini[Gemini API]
+  RouteHandlers --> Gemini[Gemini API]
 ```
 
 ## ER Diagram
@@ -246,7 +247,3 @@ Treating AI insights as an additive layer instead of a hard dependency kept the 
 - Add weekly digest delivery (email or in-app summary).
 - Add coach-view and multi-user comparison workflows.
 - Add CSV export for entries and insight history.
-- Add a light theme option and broader accessibility refinements.
-
-
-
